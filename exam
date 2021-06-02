@@ -1,0 +1,28 @@
+#include <stdio.h>
+main (){
+	int a;
+	int dizi [2][2];
+	int toplam [2];
+	int ort=0;
+	
+	for (int i=0;i<3;i++){
+	a=i;
+	printf("\n %d. sinif ogrencileri\n ",a);
+		
+	for (int x=0;x<3;x++){
+	printf("\nYas giriniz:");
+	scanf("\n%d",&dizi[a][x]);
+		if(x==2){
+			toplam[i]=(dizi[a][0]+dizi[a][1]+dizi[a][2])/3;
+	printf("\n %d. sinifin yas ortalamasi: %d \n",a,toplam[i]);
+		}
+	}
+	}
+	for(int i=0;i<3;i++){
+ 	ort+=toplam[i];
+		if(i==2){
+			ort=ort/3;
+ 			printf("\n %d",ort);
+ 	}
+}	
+}
